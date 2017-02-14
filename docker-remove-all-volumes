@@ -1,0 +1,1 @@
+docker volume rm $(docker volume ls |awk 'NR> 1 {print $2}')
