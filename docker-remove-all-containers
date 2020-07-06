@@ -1,1 +1,1 @@
-docker rm -v -f $(docker ps -a | awk 'NR> 1 {print $1}')
+docker rm -v -f $(docker ps -q)
